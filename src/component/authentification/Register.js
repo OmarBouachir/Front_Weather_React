@@ -1,4 +1,4 @@
-import "./Register.css"
+import "../style/Register.css"
 import { useState } from "react";
 import axios from "axios";
 import swal from "sweetalert";

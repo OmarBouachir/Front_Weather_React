@@ -1,9 +1,8 @@
-import "./Login.css"
+import "../style/Login.css"
 import axios from "axios";
 import { useState } from "react";
 import {Link} from 'react-router-dom';
 import swal from "sweetalert";
-import { useEffect } from "react";
 
 function Login() {
     const [login,setLogin]=useState('');

@@ -1,6 +1,7 @@
 import React from 'react'
-import NotifAndDeconection from './NotifAndDeconection'
-
+import Deconection from './Deconection'
+import Notification from './Notification'
+import History from './History';
 function TopButtons( {setQuery} ) {
     const cities=[
         {
@@ -30,7 +31,8 @@ function TopButtons( {setQuery} ) {
             <button id={city.id} className="text-white text-lg font-medium" onClick={()=>{setQuery({q: city.title})}}>{city.title}</button>
         )
         )}
-        <NotifAndDeconection/>
+        <History/>
+        <Deconection/>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {UilSearch,UilLocationPoint} from '@iconscout/react-unicons';
-
+import Notification from './Notification';
 function Inputs( {setQuery, units, setUnits} ) {
   const  [city,setCity]=useState('');
 
@@ -40,7 +40,13 @@ function Inputs( {setQuery, units, setUnits} ) {
             <button onClick={handleUnitChange} name="metric" className="text-xl text-white font-light transition ease-out hover:scale-125 ">°C</button>
             <p className="text-xl text-white mx-1">|</p>
             <button onClick={handleUnitChange} name="imperial" className="text-xl text-white font-light transition ease-out hover:scale-125 ">°F</button>
+            <div className="ml-6">
+            <Notification count={2}/>
+            </div>
+            
         </div>
+                
+        
     </div>
   )
 }
